@@ -8,9 +8,17 @@ Isn't it great that interactive Google Earth quizes can now be played in a webbr
 
 I adapted my Google Earth quiz template for use in the new Google Earth for Chrome and Android.
 
-For now some pointers but I hope toi look into (translation from Dutch) eleborating shortly.
+Basic template, features:
+- multiple choice questions
+- true or false questions
+- optional 'skip question'-cheat (by uncommenting the link)
 
-This will be the right place to check for updates.
+Some pointers here and this will be the right place to check for updates.
+
+Hope this will get you started and of course you're welcome to check out the issues. Even better: let me know where I can find your next quiz!
+
+Cheers,
+Dieter
 
 
 
