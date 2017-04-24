@@ -13,7 +13,7 @@ Basic template, features:
 - true or false questions
 - optional 'skip question'-cheat (by uncommenting the link)
 
-Version 1.0.1. (170421, adapted for use in the new Google Earth (for Chrome and Android) implements KML 2.2. Google extension features <a href="#1;flyto"> en <a href="#1;balloon"> in the html description of placemarks and folders.
+Version 1.0.1. (170421, adapted for use in the new Google Earth (for Chrome and Android) implements KML 2.2. (Google extension of OGC KML) features flyto and balloon in the html description of placemarks and folders.
 
 Noob friendly instructions (are included in comments in the file and) are work in progres. Will folow here shortly.
 
