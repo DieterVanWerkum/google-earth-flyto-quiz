@@ -18,6 +18,9 @@ Did you see the demo of version 2? Fruit! You find the download at https://diete
 
 # release notes version 2, 13-6-2017
 
+Version 2, because I think (KML-features) Region and 'Extended data' don belong in a basic template. Since nobody forked untill now I simply detroyed version 1.0.2. That name was allready a clue I wasnt entirely happy with it.
+
+- (drastic change) flyto wrong answer is to balloon now! (I hope Google will throw in 'balloonflyto' later)
 - implemented the new placemark popup mode 'panel'
 - updated the description markup to HTML5
 - links to online images
