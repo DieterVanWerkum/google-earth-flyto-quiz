@@ -309,7 +309,7 @@ It gets lots of subfolders, first all the questions and then the answers per que
                </head>
    	         <body>
                   <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
-                     <h3>TYPE QUESTION HERE?</h3>
+                     <h3>TYPE QUESTION 1 HERE?</h3>
                      <p><center><img src="http://YOURDOMAIN/YOUR/PATH/YOURIMAGE"></center></p>
                      <p><font color="#ffffff">
 <!-- note: only one answer gets the flyto link. Wrong answers get a balloon link --> 
@@ -342,7 +342,7 @@ It gets lots of subfolders, first all the questions and then the answers per que
                </head>
    	         <body>
                   <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
-                     <h3>TYPE QUESTION TWO HERE?</h3>
+                     <h3>TYPE QUESTION 2 HERE?</h3>
                      <p><center><img src="http://YOURDOMAIN/YOUR/PATH/YOURIMAGE"></center></p>
                      <p><font color="#ffffff">
                         a) <a href="#q2aa;balloon">Zambia</a>
@@ -371,7 +371,7 @@ It gets lots of subfolders, first all the questions and then the answers per que
             </head>
 	         <body>
                <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
-                  <h3>TYPE QUESTION TWO HERE?</h3>
+                  <h3>TYPE QUESTION 3 HERE?</h3>
                   <p><center><img src="http://YOURDOMAIN/YOUR/PATH/YOURIMAGE"></center></p>
                   <p><font color="#ffffff">
                   <!-- Adjust the following answers like you please. Read the instructions above! -->
@@ -401,7 +401,7 @@ It gets lots of subfolders, first all the questions and then the answers per que
             </head>
 	         <body>
                <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
-                  <h3>TYPE QUESTION TWO HERE?</h3>
+                  <h3>TYPE QUESTION 4 HERE?</h3>
                   <p><center><img src="http://YOURDOMAIN/YOUR/PATH/YOURIMAGE"></center></p>
                   <p><font color="#ffffff">
                   <br>a) <a href="#q4aa;balloon">The Netherlands</a>
@@ -430,7 +430,7 @@ It gets lots of subfolders, first all the questions and then the answers per que
                </head>
    	         <body>
                   <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
-                     <h3>TYPE QUESTION TWO HERE?</h3>
+                     <h3>TYPE QUESTION 5 HERE?</h3>
                      <p><center><img src="http://YOURDOMAIN/YOUR/PATH/YOURIMAGE"></center></p>
                      <br><br>a) <a href="#q5aa;balloon">Argentina</a>
                      <br>b) <a href="#q5ab;flyto">TYPE THE CORRECT ANSWER HERE</a>
@@ -458,7 +458,7 @@ It gets lots of subfolders, first all the questions and then the answers per que
                </head>
    	         <body>
                   <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
-                     <h3>TYPE QUESTION TWO HERE?</h3>
+                     <h3>TYPE QUESTION 6 HERE?</h3>
                      <p><center><img src="http://YOURDOMAIN/YOUR/PATH/YOURIMAGE"></center></p>
                      a) <a href="#q6aa;balloon">Finland</a>
                      <br>b) <a href="#q6ab;flyto">Brazil (and United States, India)</a>
@@ -485,7 +485,7 @@ It gets lots of subfolders, first all the questions and then the answers per que
                </head>
    	         <body>
                   <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
-                     <h3>TYPE QUESTION TWO HERE?</h3>
+                     <h3>TYPE QUESTION 7 HERE?</h3>
                      <p><center><img src="http://YOURDOMAIN/YOUR/PATH/YOURIMAGE"></center></p>
                      a) <a href="#q7aa;balloon">Thailand</a>
                      <br>b) <a href="#q7ab;flyto">TYPE THE CORRECT ANSWER HERE</a>
@@ -513,7 +513,7 @@ It gets lots of subfolders, first all the questions and then the answers per que
                </head>
    	         <body>
                   <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
-                     <h3>TYPE QUESTION TWO HERE?</h3>
+                     <h3>TYPE QUESTION 8 HERE?</h3>
                      <p><center><img src="http://YOURDOMAIN/YOUR/PATH/YOURIMAGE"></center></p>
                      <br><br>a) <a href="#q8aa;balloon">Marocco</a>
                      <br>b) <a href="#q8ab;balloon">Hawaï</a>
@@ -597,6 +597,7 @@ The id's of the answer folders and placemarks need to match with what the questi
             <range>919</range>
 				<tilt>72</tilt>
 				<heading>0</heading>
+				<altitudeMode>clampToGround</altitudeMode>
 			</LookAt>
 			<styleUrl>#answer</styleUrl>
 		   <Point>
@@ -682,6 +683,7 @@ The id's of the answer folders and placemarks need to match with what the questi
             <range>1383</range>
 				<tilt>72</tilt>
 				<heading>0</heading>
+				<altitudeMode>clampToGround</altitudeMode>
 			</LookAt>
 			<styleUrl>#answer</styleUrl>
 		   <Point>
@@ -761,6 +763,7 @@ The id's of the answer folders and placemarks need to match with what the questi
             <range>1311</range>
 				<tilt>72</tilt>
 				<heading>0</heading>
+				<altitudeMode>clampToGround</altitudeMode>
 			</LookAt>
 			<styleUrl>#answer</styleUrl>
 		   <Point>
@@ -843,6 +846,7 @@ The id's of the answer folders and placemarks need to match with what the questi
             <range>2138</range>
 				<tilt>72</tilt>
 				<heading>0</heading>
+				<altitudeMode>clampToGround</altitudeMode>
 			</LookAt>
 			<styleUrl>#answer</styleUrl>
 		   <Point>
@@ -924,6 +928,7 @@ The id's of the answer folders and placemarks need to match with what the questi
             <range>1147</range>
 				<tilt>72</tilt>
 				<heading>0</heading>
+				<altitudeMode>clampToGround</altitudeMode>
 			</LookAt>
 			<styleUrl>#answer</styleUrl>
 		   <Point>
@@ -1006,6 +1011,7 @@ The id's of the answer folders and placemarks need to match with what the questi
             <range>7624</range>
 				<tilt>72</tilt>
 				<heading>0</heading>
+				<altitudeMode>clampToGround</altitudeMode>
 			</LookAt>
 			<styleUrl>#answer</styleUrl>
    		<Point>
@@ -1088,6 +1094,7 @@ The id's of the answer folders and placemarks need to match with what the questi
             <range>5604</range>
 				<tilt>72</tilt>
 				<heading>0</heading>
+				<altitudeMode>clampToGround</altitudeMode>
 			</LookAt>
 			<styleUrl>#answer</styleUrl>
 		   <Point>
@@ -1194,6 +1201,7 @@ The id's of the answer folders and placemarks need to match with what the questi
             <range>2285</range>
 				<tilt>72</tilt>
 				<heading>0</heading>
+				<altitudeMode>clampToGround</altitudeMode>
 			</LookAt>
 			<styleUrl>#answer</styleUrl>
 			<Point>
