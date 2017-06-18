@@ -1,1226 +1,1225 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
-
-   <Document>
-   <name>Fruit of the world, a flyto-quiz</name>
-
-
-<!--
-*  Copyright 2017 Dieter van Werkum. Licence: MIT
-*
-*  This document is based on the 'Google Earth Flyto quiz template' at
-*  https://github.com/DieterVanWerkum/google-earth-flyto-quiz
--->
-
-
-
-   <atom:author><atom:name>Dieter van Werkum</atom:name></atom:author>
-   <atom:link href="https://www.github.com/dietervanwerkum/google-earth-flyto-quiz"></atom:link>
-
-	<open>1</open>
-	<Snippet maxLines="0">
-	</Snippet>
-	<description>
-   <![CDATA[<!DOCTYPE html>
-      <html>
-         <head>
-            <meta charset="UTF-8">
-         </head>
-         <body>
-            <div style="padding: 20px 20px 20px 20px; ">
-               <br><br><br><br>
-					<!-- gets title from document name above -->
-               <br><br>
-               <h3>Do you know where all those delicious fruits come from?</h3>
-               <br><br>
-               <a href="#1;balloon">Test your knowledge!</a>
-            </div>
-         </body>
-      </html>
-	]]></description>
-	<styleUrl>#intro</styleUrl>
-	<LookAt>
-			<longitude>3.86</longitude>
-			<latitude>53.18</latitude>
-         <altitude>0</altitude>
-			<range>1000000</range>
-			<tilt>72</tilt>
-			<heading>0</heading>
-	</LookAt>
-
-
-<Style id="intro">
-		<IconStyle>
-			<scale>3.0</scale>
-			<Icon>
-				<href>https://dietervanwerkum.github.io/google-earth-flyto-quiz/fruit-a-flyto-quiz-icon.png</href>
-			</Icon>
-		</IconStyle>
-		<LabelStyle>
-			<scale>1.7</scale>
-		</LabelStyle>
-		<ListStyle>
-			<listItemType>checkHideChildren</listItemType>
-			<ItemIcon>
-				<state>closed</state>
-				<href>https://dietervanwerkum.github.io/google-earth-flyto-quiz/fruit-a-flyto-quiz-icon.png</href>
-			</ItemIcon>
-		</ListStyle>
-		<BalloonStyle>
-         <![CDATA[<!DOCTYPE html>
-            <html>
-               <head>
-                  <meta charset="UTF-8">
-               </head>
-   				<body>
-<!-- todo: external stylesheet to make splash page responsive (and remain proper for classic Google Earth) -->
-                   <div id="splash" style="width: 100%; color: #ffffff; text-align: center; padding: 20px 20px 20px 20px; ">
+ 
+<Document>
+<name>Fruit of the world, a flyto-quiz</name>
+    
+    
+    <!--
+    *  Copyright 2017 Dieter van Werkum. All rights reserved.
+    *
+    *  This document is based on the 'Google Earth Flyto quiz template' at
+    *  https://github.com/DieterVanWerkum/google-earth-flyto-quiz (licenced CC-BY)
+    -->
+    
+    
+    
+       <atom:author><atom:name>Dieter van Werkum</atom:name></atom:author>
+       <atom:link href="https://www.github.com/dietervanwerkum/google-earth-flyto-quiz"></atom:link>
+    
+    	<open>1</open>
+    	<Snippet maxLines="0">
+    	</Snippet>
+    	<description>
+       <![CDATA[<!DOCTYPE html>
+          <html>
+             <head>
+                <meta charset="UTF-8">
+             </head>
+             <body>
+                <div style="padding: 20px 20px 20px 20px; ">
+                   <br><br><br><br>
+    					<!-- gets title from document name above -->
+                   <br><br>
+                   <h3>Do you know where all those delicious fruits come from?</h3>
+                   <br><br>
+                   <a href="#1;balloon">Test your knowledge!</a>
+                </div>
+             </body>
+          </html>
+    	]]></description>
+    	<styleUrl>#intro</styleUrl>
+    	<LookAt>
+    			<longitude>3.86</longitude>
+    			<latitude>53.18</latitude>
+             <altitude>0</altitude>
+    			<range>1000000</range>
+    			<tilt>72</tilt>
+    			<heading>0</heading>
+    	</LookAt>
+    
+    
+    <Style id="intro">
+    		<IconStyle>
+    			<scale>3.0</scale>
+    			<Icon>
+    				<href>https://dietervanwerkum.github.io/google-earth-flyto-quiz/fruit-a-flyto-quiz-icon.png</href>
+    			</Icon>
+    		</IconStyle>
+    		<LabelStyle>
+    			<scale>1.7</scale>
+    		</LabelStyle>
+    		<ListStyle>
+    			<listItemType>checkHideChildren</listItemType>
+    			<ItemIcon>
+    				<state>closed</state>
+    				<href>https://dietervanwerkum.github.io/google-earth-flyto-quiz/fruit-a-flyto-quiz-icon.png</href>
+    			</ItemIcon>
+    		</ListStyle>
+    		<BalloonStyle>
+             <![CDATA[<!DOCTYPE html>
+                <html>
+                   <head>
+                      <meta charset="UTF-8">
+                   </head>
+       				<body>
+    <!-- todo: external stylesheet to make splash page responsive (and remain proper for classic Google Earth) -->
+                       <div id="splash" style="width: 100%; color: #ffffff; text-align: center; padding: 20px 20px 20px 20px; ">
+                          $[description]
+                       </div>
+    				    </body>
+    				</html>
+    			]]>
+    			<bgColor>ff404040</bgColor>
+    		   <gx:displayMode>panel</gx:displayMode>
+    		</BalloonStyle>
+    	</Style>
+    
+    	<Style id="question">
+    		<LabelStyle>
+    		</LabelStyle>
+    		<BalloonStyle>
+             <![CDATA[<!DOCTYPE html>
+                <html>
+                   <head>
+                      <meta charset="UTF-8">
+                   </head>
+    				<body>
+                   <div id="wrapper-questions" style="width: 480px; color: #ffffff; padding: 20px 20px 20px 20px; ">
                       $[description]
                    </div>
-				    </body>
-				</html>
-			]]>
-			<bgColor>ff404040</bgColor>
-		   <gx:displayMode>panel</gx:displayMode>
-		</BalloonStyle>
-	</Style>
-
-	<Style id="question">
-		<LabelStyle>
-		</LabelStyle>
-		<BalloonStyle>
-         <![CDATA[<!DOCTYPE html>
-            <html>
-               <head>
-                  <meta charset="UTF-8">
-               </head>
-				<body>
-               <div id="wrapper-questions" style="width: 480px; color: #ffffff; padding: 20px 20px 20px 20px; ">
-                  $[description]
-               </div>
-            </body>
-            </html>
-        ]]>
-	     <bgColor>ff404040</bgColor>
-		  <gx:displayMode>panel</gx:displayMode>
-		</BalloonStyle>
-	</Style>
-
-	<Style id="answer">
-		<IconStyle>
-			<scale>3.0</scale>
-			<Icon>
-<!-- june 2017: custom icon via extended data doesn't work	<href>$fruitImage</href> 
-also commented out in (correct) answers -->
-			   <href>https://dietervanwerkum.github.io/google-earth-flyto-quiz/fruit-a-flyto-quiz-icon.png</href>
-			</Icon>
-		</IconStyle>
-		<LabelStyle>
-		</LabelStyle>
-		<BalloonStyle>
-         <![CDATA[<!DOCTYPE html>
-            <html>
-               <head>
-                  <meta charset="UTF-8">
-               </head>
-				<body>
-               <div id="wrapper-answers" style="width: 480px; color: #ffffff; padding: 20px 20px 20px 20px; ">
-                  $[description]
-               </div>
-			   </body>
-			   </html>
-		   ]]>
-			<bgColor>ff404040</bgColor>
-			<gx:displayMode>panel</gx:displayMode>
-		</BalloonStyle>
-	</Style>
-
-	<Style id="last">
-		<LabelStyle>
-			<scale>1.2</scale>
-		</LabelStyle>
-		<BalloonStyle>
-         <![CDATA[<!DOCTYPE html>
-            <html>
-               <head>
-                  <meta charset="UTF-8">
-               </head>
-   				<body>
-                  <div id="wrapper-last" style="width: 480px; color: #ffffff; padding: 20px 20px 20px 20px; ">
-                     $[description]
-                  </div>
-   				</body>
-   				</html>
-			]]>
-			<bgColor>ff404040</bgColor>
-			<gx:displayMode>panel</gx:displayMode>
-		</BalloonStyle>
-	</Style>
-
-
-
-
-
-
-
-
-
-   <Placemark id="introduction">
-		<name>Fruit of the world, a flyto-quiz!</name>
-		<visibility>1</visibility>
-		<Snippet maxLines="2"></Snippet>
-		<description>
-      <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-            <body>
-               <div style="padding: 20px 20px 20px 20px; ">
-						<!-- Gets title from Placemark name (which we need as a label) -->
-                  <img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/fruit-a-flyto-quiz-icon.png">
-                  <br><br><br><br>
-
-                  <br><br>
-                  <h3>Do you know where all those delicious fruits come from?</h3>
-                  <br><br>
-                  <a href="#1;balloon">Test your knowledge!</a>
-               </div>
-            </body>
-         </html>
-      ]]></description>
-		<LookAt>
-			<longitude>3.86</longitude>
-			<latitude>53.18</latitude>
-			<altitude>0</altitude>
-			<range>1000000</range>
-			<tilt>72</tilt>
-			<heading>0</heading>
-			<altitudeMode>relativeToGround</altitudeMode>
-		</LookAt>
-		<styleUrl>#intro</styleUrl>
-		<Point>
-			<coordinates>3.86,53.18,0</coordinates>
-		</Point>
-	</Placemark>
-
-
-
-<!-- managing the sidebar of (the real) Google Earth -->
-	<Folder>
-		<name>questions and answers</name>
-		<open>0</open>
-		<visibility>1</visibility>
-		<ListStyle>
-			<listItemType>checkHideChildren</listItemType>
-			<ItemIcon>
-				<state>open</state>
-				<href>http://www.aotp.nl/assets/img/logo.jpg</href>
-			</ItemIcon>
-			<bgColor>ff404040</bgColor>
-		</ListStyle>
-<!-- Keep the questions and wrong answers out of view untill they are found. Only if you know what your doing!
-Todo: add 'minlod'
--->
-<!--   <Region id="show-after-zoom-in">
-		<LatLonAltBox>
-			<north>54.00</north>
-			<south>50.00</south>
-			<east>5</east>
-			<west>6</west>
-			<minAltitude>0</minAltitude>
-			<maxAltitude>300</maxAltitude>
-			<altitudeMode>clampToGround</altitudeMode>
-		</LatLonAltBox>
-   </Region>
--->
-
-
-
-<!-- question 1 -->
-      <Folder id="1">
-      	<name></name><!-- leave empty, or will show in balloon -->
-      	<visibility>1</visibility>
-      	<Snippet maxLines="2"></Snippet>
-      	<description>
-         <![CDATA[<!DOCTYPE html>
-            <html>
-               <head>
-                  <meta charset="UTF-8">
-               </head>
-   	         <body>
-                  <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
-                     <h3>Which country is famous for its apples?</h3>
-                     <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/apple_7_200.png"></center></p>
-                     <p><font color="#ffffff">
-                     a) <a href="#q1aa;balloon">Alaska</a>
-                     <br>b) <a href="#q1ab;flyto">China (and United States, Turkey, Poland)</a>
-                     <br>c) <a href="#q1ac;balloon">Australia</a>
-                     </font></p>
-                     <br><br><br>This is question 1 of 8 of our <a href="#introduction;flyto">flyto-quiz</a>
-                  </div>
-               </body>
-            </html>
-      	]]></description>
-      	<styleUrl>#question</styleUrl>
-      </Folder>
-
-		<Folder id="2">
-			<name></name>
-			<visibility>1</visibility>
-			<Snippet maxLines="2"></Snippet>
-			<description>
-         <![CDATA[<!DOCTYPE html>
-            <html>
-               <head>
-                  <meta charset="UTF-8">
-               </head>
-   	         <body>
-                  <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
-                     <h3>Which country is famous for its avocados?</h3>
-                     <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/avocado_fuerte_200.png"></center></p>
-                     <p><font color="#ffffff">
-                        a) <a href="#q2aa;balloon">Zambia</a>
-                        <br>b) <a href="#q2ab;flyto">Mexico (and Dominican Republic, Columbia, Indonesia)</a>
-                        <br>c) <a href="#q2ac;balloon">Norway</a>
-                     </font></p>
+                </body>
+                </html>
+            ]]>
+    	     <bgColor>ff404040</bgColor>
+    		  <gx:displayMode>panel</gx:displayMode>
+    		</BalloonStyle>
+    	</Style>
+    
+    	<Style id="answer">
+    		<IconStyle>
+    			<scale>3.0</scale>
+    			<Icon>
+    <!-- june 2017: custom icon via extended data doesn't work	<href>$fruitImage</href> 
+    also commented out in (correct) answers -->
+    			   <href>https://dietervanwerkum.github.io/google-earth-flyto-quiz/fruit-a-flyto-quiz-icon.png</href>
+    			</Icon>
+    		</IconStyle>
+    		<LabelStyle>
+    		</LabelStyle>
+    		<BalloonStyle>
+             <![CDATA[<!DOCTYPE html>
+                <html>
+                   <head>
+                      <meta charset="UTF-8">
+                   </head>
+    				<body>
+                   <div id="wrapper-answers" style="width: 480px; color: #ffffff; padding: 20px 20px 20px 20px; ">
+                      $[description]
+                   </div>
+    			   </body>
+    			   </html>
+    		   ]]>
+    			<bgColor>ff404040</bgColor>
+    			<gx:displayMode>panel</gx:displayMode>
+    		</BalloonStyle>
+    	</Style>
+    
+    	<Style id="last">
+    		<LabelStyle>
+    			<scale>1.2</scale>
+    		</LabelStyle>
+    		<BalloonStyle>
+             <![CDATA[<!DOCTYPE html>
+                <html>
+                   <head>
+                      <meta charset="UTF-8">
+                   </head>
+       				<body>
+                      <div id="wrapper-last" style="width: 480px; color: #ffffff; padding: 20px 20px 20px 20px; ">
+                         $[description]
+                      </div>
+       				</body>
+       				</html>
+    			]]>
+    			<bgColor>ff404040</bgColor>
+    			<gx:displayMode>panel</gx:displayMode>
+    		</BalloonStyle>
+    	</Style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+       <Placemark id="introduction">
+    		<name>Fruit of the world, a flyto-quiz!</name>
+    		<visibility>1</visibility>
+    		<Snippet maxLines="2"></Snippet>
+    		<description>
+          <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+                <body>
+                   <div style="padding: 20px 20px 20px 20px; ">
+    						<!-- Gets title from Placemark name (which we need as a label) -->
+                      <img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/fruit-a-flyto-quiz-icon.png">
+                      <br><br><br><br>
+    
+                      <br><br>
+                      <h3>Do you know where all those delicious fruits come from?</h3>
+                      <br><br>
+                      <a href="#1;balloon">Test your knowledge!</a>
+                   </div>
+                </body>
+             </html>
+          ]]></description>
+    		<LookAt>
+    			<longitude>3.86</longitude>
+    			<latitude>53.18</latitude>
+    			<altitude>0</altitude>
+    			<range>1000000</range>
+    			<tilt>72</tilt>
+    			<heading>0</heading>
+    			<altitudeMode>relativeToGround</altitudeMode>
+    		</LookAt>
+    		<styleUrl>#intro</styleUrl>
+    		<Point>
+    			<coordinates>3.86,53.18,0</coordinates>
+    		</Point>
+    	</Placemark>
+    
+    
+    
+    <!-- managing the sidebar of (the real) Google Earth -->
+    	<Folder>
+    		<name>questions and answers</name>
+    		<open>0</open>
+    		<visibility>1</visibility>
+    		<ListStyle>
+    			<listItemType>checkHideChildren</listItemType>
+    			<ItemIcon>
+    				<state>open</state>
+    				<href>http://www.aotp.nl/assets/img/logo.jpg</href>
+    			</ItemIcon>
+    			<bgColor>ff404040</bgColor>
+    		</ListStyle>
+    <!-- Keep the questions and wrong answers out of view untill they are found. Only if you know what your doing!
+    Todo: add 'minlod'
+    -->
+    <!--   <Region id="show-after-zoom-in">
+    		<LatLonAltBox>
+    			<north>54.00</north>
+    			<south>50.00</south>
+    			<east>5</east>
+    			<west>6</west>
+    			<minAltitude>0</minAltitude>
+    			<maxAltitude>300</maxAltitude>
+    			<altitudeMode>clampToGround</altitudeMode>
+    		</LatLonAltBox>
+       </Region>
+    -->
+    
+    
+    
+    <!-- question 1 -->
+          <Folder id="1">
+          	<name></name><!-- leave empty, or will show in balloon -->
+          	<visibility>1</visibility>
+          	<Snippet maxLines="2"></Snippet>
+          	<description>
+             <![CDATA[<!DOCTYPE html>
+                <html>
+                   <head>
+                      <meta charset="UTF-8">
+                   </head>
+       	         <body>
+                      <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
+                         <h3>Which country is famous for its apples?</h3>
+                         <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/apple_7_200.png"></center></p>
+                         <p><font color="#ffffff">
+                         a) <a href="#q1aa;balloon">Alaska</a>
+                         <br>b) <a href="#q1ab;flyto">China (and United States, Turkey, Poland)</a>
+                         <br>c) <a href="#q1ac;balloon">Australia</a>
+                         </font></p>
+                         <br><br><br>This is question 1 of 8 of our <a href="#introduction;flyto">flyto-quiz</a>
+                      </div>
+                   </body>
+                </html>
+          	]]></description>
+          	<styleUrl>#question</styleUrl>
+          </Folder>
+    
+    		<Folder id="2">
+    			<name></name>
+    			<visibility>1</visibility>
+    			<Snippet maxLines="2"></Snippet>
+    			<description>
+             <![CDATA[<!DOCTYPE html>
+                <html>
+                   <head>
+                      <meta charset="UTF-8">
+                   </head>
+       	         <body>
+                      <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
+                         <h3>Which country is famous for its avocados?</h3>
+                         <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/avocado_fuerte_200.png"></center></p>
+                         <p><font color="#ffffff">
+                            a) <a href="#q2aa;balloon">Zambia</a>
+                            <br>b) <a href="#q2ab;flyto">Mexico (and Dominican Republic, Columbia, Indonesia)</a>
+                            <br>c) <a href="#q2ac;balloon">Norway</a>
+                         </font></p>
+          
+                         <br><br><br><font color="#ffffff"><a href="#1;balloon">previous question</a></font>
+                         <br><br>This is question 2 of 8 of our <a href="#introduction;flyto">flyto-quiz</a>
+                      </div>
+                   </body>
+                </html>
+             ]]></description>
+    			<styleUrl>#question</styleUrl>
+          </Folder>
+    
+    		<Folder id="3">
+    			<name></name>
+    			<visibility>1</visibility>
+    			<Snippet maxLines="2"></Snippet>
+    			<description>
+             <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                   <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
+                      <h3>Which country is famous for its bananas?</h3>
+                      <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/banana_peeled_200.png"></center></p>
+                      <p><font color="#ffffff">
+                      <!-- Adjust the following answers like you please. Read the instructions above! -->
+                      <br>a) <a href="#q3aa;balloon">Japan</a>
+                      <br>b) <a href="#q3ab;flyto">India (and China, Philipines, Brazil)</a>
+                      <br>c) <a href="#q3ac;balloon">Greece</a>
+                      </font></p>
+                      
+                      <br><br><br><font color="#ffffff"><a href="#2;balloon">previous question</a></font>
+                      <br><br>This is question 3 of 8 of our <a href="#introduction;flyto">flyto-quiz</a>
+                   </div>
+                </body>
+             </html>
+             ]]></description>
+       		<styleUrl>#question</styleUrl>
+          </Folder>
+    
+    		<Folder id="4">
+    			<name></name>
+    			<visibility>1</visibility>
+    			<Snippet maxLines="2"></Snippet>
+    			<description>
+             <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                   <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
+                      <h3>Which country is famous for its kiwi-fruit?</h3>
+                      <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/kiwi_photo_200.png"></center></p>
+                      <p><font color="#ffffff">
+                      <br>a) <a href="#q4aa;balloon">The Netherlands</a>
+                      <br>b) <a href="#q4ab;flyto">Italy (and China, New Zeeland, Chili)</a>
+                      <br>c) <a href="#q4ac;balloon">Belgium</a>
+                      </font></p>
+                      
+                      <br><br><br><font color="#ffffff"><a href="#3;balloon">previous question</a></font>
+                      <br><br>This is question 4 of 8 of our <a href="#introduction;flyto">flyto-quiz</a>
+                   </div>
+                </body>
+             </html>
+             ]]></description>
+    			<styleUrl>#question</styleUrl>
+          </Folder>
+    
+          <Folder id="5">
+    			<name></name>
+    			<visibility>1</visibility>
+    			<Snippet maxLines="2"></Snippet>
+    			<description>
+             <![CDATA[<!DOCTYPE html>
+                <html>
+                   <head>
+                      <meta charset="UTF-8">
+                   </head>
+       	         <body>
+                      <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
+                         <h3>Which country is famous for its mangos?</h3>
+                         <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/mango_200.png"></center></p>
+                         <br><br>a) <a href="#q5aa;balloon">Argentina</a>
+                         <br>b) <a href="#q5ab;flyto">Thailand (and India, China, Indonesia)</a>
+                         <br>c) <a href="#q5ac;balloon">Ruanda</a>
+                         </font>
+                         
+                         <br><br><br><font color="#ffffff"><a href="#4;balloon">previous question</a></font>
+                         <br><br>This is question 5 of 8 of our <a href="#introduction;flyto">flyto-quiz</a>
+                      </div>
+                   </body>
+                </html>
+             ]]></description>
+    			<styleUrl>#question</styleUrl>
+          </Folder>
+    
+          <Folder id="6">
+    			<name></name>
+    			<visibility>1</visibility>
+    			<Snippet maxLines="2"></Snippet>
+    			<description>
+             <![CDATA[<!DOCTYPE html>
+                <html>
+                   <head>
+                      <meta charset="UTF-8">
+                   </head>
+       	         <body>
+                      <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
+                         <h3>Which country is famous for its oranges?</h3>
+                         <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/orange_2_200.png"></center></p>
+                         a) <a href="#q6aa;balloon">Finland</a>
+                         <br>b) <a href="#q6ab;flyto">Brazil (and United States, India)</a>
+                         <br>c) <a href="#q6ac;balloon">Equador</a>
+                         
+                         <br><br><br><font color="#ffffff"><a href="#5;balloon">previous question</a></font>
+                         <br><br>This is question 6 of 8 of our <a href="#introduction;flyto">flyto-quiz</a>
+                      </div>
+                   </body>
+                </html>
+             ]]></description>
+    			<styleUrl>#question</styleUrl>
+          </Folder>
+    
+          <Folder id="7">
+    			<name></name>
+    			<visibility>1</visibility>
+    			<Snippet maxLines="2"></Snippet>
+    			<description>
+             <![CDATA[<!DOCTYPE html>
+                <html>
+                   <head>
+                      <meta charset="UTF-8">
+                   </head>
+       	         <body>
+                      <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
+                         <h3>Which country is famous for its pears?</h3>
+                         <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/pear_plain_200.png"></center></p>
+                         a) <a href="#q7aa;balloon">Thailand</a>
+                         <br>b) <a href="#q7ab;flyto">Argentina (and China, United States, Italy)</a>
+                         <br>c) <a href="#q7ac;balloon">Sri Lanka</a>
+                         </font>
+                         
+                         <br><br><br><font color="#ffffff"><a href="#6;balloon">previous question</a> </font>
+                         <br><br>This is question 7 of 8 of our <a href="#introduction;flyto">flyto-quiz</a>
+                      </div>
+                   </body>
+                </html>
+             ]]></description>
+    			<styleUrl>#question</styleUrl>
+          </Folder>
+    
+          <Folder id="8">
+    			<name></name>
+    			<visibility>1</visibility>
+    			<Snippet maxLines="2"></Snippet>
+    			<description>
+             <![CDATA[<!DOCTYPE html>
+                <html>
+                   <head>
+                      <meta charset="UTF-8">
+                   </head>
+       	         <body>
+                      <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
+                         <h3>Which country is famous for its pineapples?</h3>
+                         <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/pineapple_4_200.png"></center></p>
+                         <br><br>a) <a href="#q8aa;balloon">Marocco</a>
+                         <br>b) <a href="#q8ab;balloon">Hawaï</a>
+                         <br>c) <a href="#q8ac;flyto">Costa Rica (and Brazil, Phillipines, Thailand)</a>
+                         
+                         <br><br><br><font color="#ffffff"><a href="#7;balloon">previous question</a></font>
+                         <br><br>This is question 8 of 8 of our <a href="#introduction;flyto">flyto-quiz</a>
+                      </div>
+                   </body>
+                </html>
+             ]]></description>
+    			<styleUrl>#question</styleUrl>
+          </Folder>
+    
+    
+    
+    
+    
+    <!-- Answers -->
+    
+    		<Folder id="q1aa">
+     			<name></name>
+    			<description>
+             <![CDATA[<!DOCTYPE html>
+                <html>
+                   <head>
+                      <meta charset="UTF-8">
+                   </head>
+    	           <body>
+                      <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
+       				     <font color="red"><center>Sorry, you're wrong.</center></font>
+                         <br><br><br><a href="#1;balloon">Try again!</a>
+                      </div>
+                   </body>
+                </html>
+    			]]></description>
+    			<styleUrl>#answer</styleUrl>
+    		</Folder>
+    
+    		<Placemark id="q1ab">
+    			<name></name>
+    			<Snippet maxLines="2"></Snippet>
+    <!--         <IconStyle>
+    			   <scale>1.3</scale>
+    			   <Icon>
+    				  <href>https://dietervanwerkum.github.io/google-earth-flyto-quiz/apple_7_200.png</href>
+    			   </Icon>
+    		   </IconStyle>-->
+    			<description>
+          <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                <div class="panel-correct-answers" style="padding: 20px 20px 20px 20px; ">
+                   <h3 style="color: #00A93C;">Congratulations, that's the correct answer!</h3>
+    <!-- image needs to be online on a webserver -->
+                   <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/apple_7_200.png"></center></p>
+    
+                   <p>source: http://www.fao.org/faostat/en/#rankings/countries_by_commodity</p>
+    
+    				   <p><br>That's a lot of apples! 
+                   <br><br><br>You're through to the <a href="#2;balloon">next question</a>!</p>
+                </div>
+                </body>
+             </html>
+    			]]></description>
+    			<LookAt>
+    				<longitude>109.46</longitude>
+    				<latitude>35.78</latitude>
+    				<altitude>0</altitude>
+                <range>919</range>
+    				<tilt>72</tilt>
+    				<heading>0</heading>
+    			</LookAt>
+    			<styleUrl>#answer</styleUrl>
+    		<Point>
+    			<coordinates>109.46,35.78,0</coordinates>
+    		</Point>
+    <!--      <ExtendedData>
+             <Data name='fruitImage'>
+                <value>https://dietervanwerkum.github.io/google-earth-flyto-quiz/apple_7_200.png</value>
+             </Data>
+    		</ExtendedData> -->
+    		</Placemark>
+    
+    		<Folder id="q1ac">
+    			<name></name>
+    			<description>
+          <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                   <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
+                      <font color="red"><center>Sorry, you're wrong. </center></font>
+                      <br><br><br><a href="#1;balloon">Try again!</a>
+                   </div>
+                </body>
+             </html>
+             ]]></description>
+    			<styleUrl>#answer</styleUrl>
+    		</Folder>
+    
+    
+    
+    
+    
+    
+    		<Folder id="q2aa">
+     			<name></name>
+    			<description>
+          <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                   <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
+                      <font color="red"><center>Sorry, you're wrong. </center></font>
+                      <br><br><br><a href="#2;balloon">Try again!</a>
+                   </div>
+                </body>
+             </html>
+             ]]></description>
+    			<styleUrl>#answer</styleUrl>
+    		</Folder>
+    
+    		<Placemark id="q2ab">
+    			<name></name>
+    			<Snippet maxLines="2"></Snippet>
+             <IconStyle>
+    			   <scale>1.3</scale>
+    			   <Icon>
+    				  <href>https://dietervanwerkum.github.io/google-earth-flyto-quiz/apple_7_200.png</href>
+    			   </Icon>
+    		   </IconStyle>
+    			<description>
+          <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                <div class="panel-correct-answers" style="padding: 20px 20px 20px 20px; ">
+                   <h3 style="color: #00A93C;">Congratulations, that's the correct answer!</h3>
+    <!-- image needs to be online on a webserver -->
+                   <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/avocado_fuerte_200.png"></center></p>
+    
+                   <p>source: http://www.fao.org/faostat/en/#rankings/countries_by_commodity</p>
+    
+    				   <p><br>Avocados are yummy!
+                   <br><br><br>You're through to the <a href="#3;balloon">next question</a>!</p>
+                </div>
+                </body>
+             </html>
+    			]]></description>
+    			<LookAt>
+    				<longitude>-97.17</longitude>
+    				<latitude>18.23</latitude>
+    				<altitude>0</altitude>
+                <range>1383</range>
+    				<tilt>72</tilt>
+    				<heading>0</heading>
+    			</LookAt>
+    			<styleUrl>#answer</styleUrl>
+    		<Point>
+    			<coordinates>-97.17,18.23,0</coordinates>
+    		</Point>
+    <!--      <ExtendedData>
+             <Data name='fruitImage'>
+                <value>https://dietervanwerkum.github.io/google-earth-flyto-quiz/avocado_fuerte_200.png</value>
+             </Data>
+    		</ExtendedData> -->
+    		</Placemark>
+    
+    		<Folder id="q2ac">
+    			<name></name>
+    			<description>
+          <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                   <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
+                      <font color="red"><center>Sorry, you're wrong. </center></font>
+                      <br><br><br><a href="#2;balloon">Try again!</a>
+                   </div>
+                </body>
+             </html>
+             ]]></description>
+    			<styleUrl>#answer</styleUrl>
+    		</Folder>
+    
+    
+    
+    
+    
+    
+    		<Folder id="q3aa">
+     			<name></name>
+    			<description>
+          <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                   <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
+                      <font color="red"><center>Sorry, you're wrong. </center></font>
+                      <br><br><br><a href="#3;balloon">Try again!</a>
+                   </div>
+                </body>
+             </html>
+             ]]></description>
+    			<styleUrl>#answer</styleUrl>
+    		</Folder>
+    
+    		<Placemark id="q3ab">
+    			<name></name>
+    			<Snippet maxLines="2"></Snippet>
+    			<description>
+          <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                <div class="panel-correct-answers" style="padding: 20px 20px 20px 20px; ">
+                   <h3 style="color: #00A93C;">Congratulations, that's the correct answer!</h3>
+    <!-- image needs to be online on a webserver -->
+                   <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/banana_peeled_200.png"></center></p>
+    
+                   <p>source: http://www.fao.org/faostat/en/#rankings/countries_by_commodity</p>
+    
+    				   <p><br>Why oh why are bananas bent?
+                   <br><br><br>You're through to the <a href="#4;balloon">next question</a>!</p>
+                </div>
+                </body>
+             </html>
+    			]]></description>
+    			<LookAt>
+    				<longitude>79.97</longitude>
+    				<latitude>12.50</latitude>
+    				<altitude>0</altitude>
+                <range>1311</range>
+    				<tilt>72</tilt>
+    				<heading>0</heading>
+    			</LookAt>
+    			<styleUrl>#answer</styleUrl>
+    		<Point>
+    			<coordinates>79.97,12.50,0</coordinates>
+    		</Point>
+    <!--      <ExtendedData>
+             <Data name='fruitImage'>
+                <value>https://dietervanwerkum.github.io/google-earth-flyto-quiz/banana_peeled_200.png</value>
+             </Data>
+    		</ExtendedData>  -->
+    		</Placemark>
+    
+    		<Folder id="q3ac">
+    			<name></name>
+    			<description>
+          <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                   <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
+                      <font color="red"><center>Sorry, you're wrong. </center></font>
+                      <br><br><br><a href="#3;balloon">Try again!</a>
+                   </div>
+                </body>
+             </html>
+             ]]></description>
+    			<styleUrl>#answer</styleUrl>
+    		</Folder>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    		<Folder id="q4aa">
+     			<name></name>
+    			<description>
+          <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                   <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
+                      <font color="red"><center>Sorry, you're wrong. </center></font>
+                      <br><br><br><a href="#4;balloon">Try again!</a>
+                   </div>
+                </body>
+             </html>
+             ]]></description>
+    			<styleUrl>#answer</styleUrl>
+    		</Folder>
+    
+    		<Placemark id="q4ab">
+    			<name></name>
+    			<Snippet maxLines="2"></Snippet>
+    			<description>
+          <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                   <div class="panel-correct-answers" style="padding: 20px 20px 20px 20px; ">
+                      <h3 style="color: #00A93C;">Congratulations, that's the correct answer!</h3>
+    <!-- image needs to be online on a webserver -->
+                      <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/kiwi_photo_200.png"></center></p>
+    
+                      <p>source: http://www.fao.org/faostat/en/#rankings/countries_by_commodity</p>
+    
+    				      <p><br>Fresh and unlike anything else with so much vitamin C!  
+                      <br><br><br>You're through to the <a href="#5;balloon">next question</a>!</p>
+                   </div>
+                </body>
+             </html>
+    			]]></description>
+    			<LookAt>
+    				<longitude>12.75</longitude>
+    				<latitude>41.59</latitude>
+    				<altitude>0</altitude>
+                <range>2138</range>
+    				<tilt>72</tilt>
+    				<heading>0</heading>
+    			</LookAt>
+    			<styleUrl>#answer</styleUrl>
+    		<Point>
+    			<coordinates>12.75,41.59,0</coordinates>
+    		</Point>
+    <!--      <ExtendedData>
+             <Data name='fruitImage'>
+                <value>https://dietervanwerkum.github.io/google-earth-flyto-quiz/kiwi_photo_200.png</value>
+             </Data>
+    		</ExtendedData>  -->
+    		</Placemark>
+    
+    		<Folder id="q4ac">
+    			<name></name>
+    			<description>
+          <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                   <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
+                      <font color="red"><center>Sorry, you're wrong. </center></font>
+                      <br><br><br><a href="#4;balloon">Try again!</a>
+                   </div>
+                </body>
+             </html>
+             ]]></description>
+    			<styleUrl>#answer</styleUrl>
+    		</Folder>
+    
+    
+    
+    
+    
+    
+    
+    
+    		<Folder id="q5aa">
+     			<name></name>
+    			<description>
+          <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                   <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
+                      <font color="red"><center>Sorry, you're wrong. </center></font>
+                      <br><br><br><a href="#5;balloon">Try again!</a>
+                   </div>
+                </body>
+             </html>
+             ]]></description>
+    			<styleUrl>#answer</styleUrl>
+    		</Folder>
+    
+    		<Placemark id="q5ab">
+    			<name></name>
+    			<Snippet maxLines="2"></Snippet>
+    			<description>
+             <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                   <div class="panel-correct-answers" style="padding: 20px 20px 20px 20px; ">
+                      <h3 style="color: #00A93C;">Congratulations, that's the correct answer!</h3>
+    <!-- image needs to be online on a webserver -->
+                      <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/mango_200.png"></center></p>
+       
+                      <p>source: http://www.fao.org/faostat/en/#rankings/countries_by_commodity</p>
+       
+    				      <p><br>Hmmm, mangos. Truly delicious fruit! 
+                      <br><br><br>You're through to the <a href="#6;balloon">next question</a>!</p>
+                   </div>
+                </body>
+             </html>
+    			]]></description>
+    			<LookAt>
+    				<longitude>98.98</longitude>
+    				<latitude>18.65</latitude>
+    				<altitude>0</altitude>
+                <range>1147</range>
+    				<tilt>72</tilt>
+    				<heading>0</heading>
+    			</LookAt>
+    			<styleUrl>#answer</styleUrl>
+    		<Point>
+    			<coordinates>98.98,18.65,0</coordinates>
+    		</Point>
+    <!--      <ExtendedData>
+             <Data name='fruitImage'>
+                <value>https://dietervanwerkum.github.io/google-earth-flyto-quiz/mango_200.png</value>
+             </Data>
+    		</ExtendedData> -->
+    		</Placemark>
+    
+    		<Folder id="q5ac">
+    			<name></name>
+    			<description>
+             <![CDATA[<!DOCTYPE html>
+                <html>
+                   <head>
+                      <meta charset="UTF-8">
+                   </head>
+       	         <body>
+                      <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
+                         <font color="red"><center>Sorry, you're wrong. </center></font>
+                         <br><br><br><a href="#5;balloon">Try again!</a>
+                      </div>
+                   </body>
+                </html>
+             ]]></description>
+    			<styleUrl>#answer</styleUrl>
+    		</Folder>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    		<Folder id="q6aa">
+     			<name></name>
+    			<description>
+             <![CDATA[<!DOCTYPE html>
+                <html>
+                   <head>
+                      <meta charset="UTF-8">
+                   </head>
+       	         <body>
+                      <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
+                         <font color="red"><center>Sorry, you're wrong. </center></font>
+                         <br><br><br><a href="#6;balloon">Try again!</a>
+                      </div>
+                   </body>
+                </html>
+             ]]></description>
+    			<styleUrl>#answer</styleUrl>
+    		</Folder>
+    
+    		<Placemark id="q6ab">
+    			<name></name>
+    			<Snippet maxLines="2"></Snippet>
+    			<description>
+          	<![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                   <div class="panel-correct-answers" style="padding: 20px 20px 20px 20px; ">
+                      <h3 style="color: #00A93C;">Congratulations, that's the correct answer!</h3>
+    <!-- image needs to be online on a webserver -->
+                      <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/orange_2_200.png"></center></p>
+       
+                      <p>source: http://www.fao.org/faostat/en/#rankings/countries_by_commodity</p>
+       
+    				      <p><br>Named after it's own colour? Or the other way around? You tell me;-) 
+                      <br><br><br>You're through to the <a href="#7;balloon">next question</a>!</p>
+                   </div>
+                </body>
+             </html>
+    			]]></description>
+    			<LookAt>
+    				<longitude>-46.87</longitude>
+    				<latitude>-22.65</latitude>
+    				<altitude>0</altitude>
+                <range>7624</range>
+    				<tilt>72</tilt>
+    				<heading>0</heading>
+    			</LookAt>
+    			<styleUrl>#answer</styleUrl>
+    		<Point>
+    			<coordinates>-46.87,-22.65,0</coordinates>
+    		</Point>
+    <!--      <ExtendedData>
+             <Data name='fruitImage'>
+                <value>https://dietervanwerkum.github.io/google-earth-flyto-quiz/orange_2_200.png</value>
+             </Data>
+    		</ExtendedData> -->
+    		</Placemark>
+    
+    		<Folder id="q6ac">
+    			<name></name>
+    			<description>
+             <![CDATA[<!DOCTYPE html>
+                <html>
+                   <head>
+                      <meta charset="UTF-8">
+                   </head>
+       	         <body>
+                      <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
+                         <font color="red"><center>Sorry, you're wrong. </center></font>
+                         <br><br><br><a href="#6;balloon">Try again!</a>
+                      </div>
+                   </body>
+                </html>
+             ]]></description>
+    			<styleUrl>#answer</styleUrl>
+    		</Folder>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    		<Folder id="q7aa">
+     			<name></name>
+    			<description>
+             <![CDATA[<!DOCTYPE html>
+                <html>
+                   <head>
+                      <meta charset="UTF-8">
+                   </head>
+       	         <body>
+                      <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
+                         <font color="red"><center>Sorry, you're wrong. </center></font>
+                         <br><br><br><a href="#7;balloon">Try again!</a>
+                      </div>
+                   </body>
+                </html>
+             ]]></description>
+    			<styleUrl>#answer</styleUrl>
+    		</Folder>
+    
+    		<Placemark id="q7ab">
+    			<name></name>
+    			<Snippet maxLines="2"></Snippet>
+    			<description>
+          <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                   <div class="panel-correct-answers" style="padding: 20px 20px 20px 20px; ">
+                      <h3 style="color: #00A93C;">Congratulations, that's the correct answer!</h3>
+    <!-- image needs to be online on a webserver -->
+                      <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/pear_plain_200.png"></center></p>
+       
+                      <p>source: http://www.fao.org/faostat/en/#rankings/countries_by_commodity</p>
+       
+    				      <p><br>A pear a day . . . keeps the doctor away. Just like all other fruits. 
+                      <br><br><br>You're through to the <a href="#8;balloon">next question</a>!</p>
+                   </div>
+                </body>
+             </html>
+    			]]></description>
+    			<LookAt>
+    				<longitude>-72.72</longitude>
+    				<latitude>-40.85</latitude>
+    				<altitude>0</altitude>
+                <range>5604</range>
+    				<tilt>72</tilt>
+    				<heading>0</heading>
+    			</LookAt>
+    			<styleUrl>#answer</styleUrl>
+    		<Point>
+    			<coordinates>-72.72,-40.85,0</coordinates>
+    		</Point>
+     <!--     <ExtendedData>
+             <Data name='fruitImage'>
+                <value>https://dietervanwerkum.github.io/google-earth-flyto-quiz/pear_plain_200.png</value>
+             </Data>
+    		</ExtendedData> -->
+    		</Placemark>
+    
+    		<Folder id="q7ac">
+    			<name></name>
+    			<description>
+             <![CDATA[<!DOCTYPE html>
+                <html>
+                   <head>
+                      <meta charset="UTF-8">
+                   </head>
+       	         <body>
+                      <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
+                         <font color="red"><center>Sorry, you're wrong. </center></font>
+                         <br><br><br><a href="#7;balloon">Try again!</a>
+                      </div>
+                   </body>
+                </html>
+             ]]></description>
+    			<styleUrl>#answer</styleUrl>
+    		</Folder>
+    
+    
+    
+    
+    
+    
+    <!-- last question-->
+    		<Folder id="q8aa">
+    			<name></name>
+    			<description>
+          <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                   <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
+    				     <font color="red"><center>Sorry, you're wrong. </center></font>
+                      <p><a href="#8;balloon">Try again!</a></p>
+                   </div>
+                </body>
+             </html>
+    			]]></description>
+    			<styleUrl>#answer</styleUrl>
+    		</Folder>
+    
+    		<Folder id="q8ab">
+    			<name></name>
+    			<description>
+             <![CDATA[<!DOCTYPE html>
+                <html>
+                   <head>
+                      <meta charset="UTF-8">
+                   </head>
+       	         <body>
+                      <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
+                         <font color="red"><center>Sorry, you're wrong. </center></font>
+                         <br><br><br><a href="#8;balloon">Try again!</a>
+                      </div>
+                   </body>
+                </html>
+             ]]></description>
+    			<styleUrl>#answer</styleUrl>
+    		</Folder>
+    
+    		<Placemark id="q8ac">
+    			<name></name>
+    			<Snippet maxLines="2"></Snippet>
+             <IconStyle>
+    			   <scale>1.3</scale>
+    			   <Icon>
+    				  <href>https://dietervanwerkum.github.io/google-earth-flyto-quiz/apple_7_200.png</href>
+    			   </Icon>
+    		   </IconStyle>
+    			<description>
+          <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                   <div class="panel-correct-answers" style="padding: 20px 20px 20px 20px; ">
+                      <h3 style="color: #00A93C;">Congratulations, that's the correct answer!</h3>
+       <!-- image needs to be online on a webserver -->
+                      <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/pineapple_4_200.png"></center></p>
+       
+                      <p>source: http://www.fao.org/faostat/en/#rankings/countries_by_commodity</p>
+                      <p>Did you know a pineapple is ripe when you can pull the center leaf easily. Hard to wait though &nbsp;. &nbsp;. &nbsp;.</p> 
       
-                     <br><br><br><font color="#ffffff"><a href="#1;balloon">previous question</a></font>
-                     <br><br>This is question 2 of 8 of our <a href="#introduction;flyto">flyto-quiz</a>
-                  </div>
-               </body>
-            </html>
-         ]]></description>
-			<styleUrl>#question</styleUrl>
-      </Folder>
-
-		<Folder id="3">
-			<name></name>
-			<visibility>1</visibility>
-			<Snippet maxLines="2"></Snippet>
-			<description>
-         <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-               <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
-                  <h3>Which country is famous for its bananas?</h3>
-                  <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/banana_peeled_200.png"></center></p>
-                  <p><font color="#ffffff">
-                  <!-- Adjust the following answers like you please. Read the instructions above! -->
-                  <br>a) <a href="#q3aa;balloon">Japan</a>
-                  <br>b) <a href="#q3ab;flyto">India (and China, Philipines, Brazil)</a>
-                  <br>c) <a href="#q3ac;balloon">Greece</a>
-                  </font></p>
-                  
-                  <br><br><br><font color="#ffffff"><a href="#2;balloon">previous question</a></font>
-                  <br><br>This is question 3 of 8 of our <a href="#introduction;flyto">flyto-quiz</a>
-               </div>
-            </body>
-         </html>
-         ]]></description>
-   		<styleUrl>#question</styleUrl>
-      </Folder>
-
-		<Folder id="4">
-			<name></name>
-			<visibility>1</visibility>
-			<Snippet maxLines="2"></Snippet>
-			<description>
-         <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-               <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
-                  <h3>Which country is famous for its kiwi-fruit?</h3>
-                  <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/kiwi_photo_200.png"></center></p>
-                  <p><font color="#ffffff">
-                  <br>a) <a href="#q4aa;balloon">The Netherlands</a>
-                  <br>b) <a href="#q4ab;flyto">Italy (and China, New Zeeland, Chili)</a>
-                  <br>c) <a href="#q4ac;balloon">Belgium</a>
-                  </font></p>
-                  
-                  <br><br><br><font color="#ffffff"><a href="#3;balloon">previous question</a></font>
-                  <br><br>This is question 4 of 8 of our <a href="#introduction;flyto">flyto-quiz</a>
-               </div>
-            </body>
-         </html>
-         ]]></description>
-			<styleUrl>#question</styleUrl>
-      </Folder>
-
-      <Folder id="5">
-			<name></name>
-			<visibility>1</visibility>
-			<Snippet maxLines="2"></Snippet>
-			<description>
-         <![CDATA[<!DOCTYPE html>
-            <html>
-               <head>
-                  <meta charset="UTF-8">
-               </head>
-   	         <body>
-                  <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
-                     <h3>Which country is famous for its mangos?</h3>
-                     <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/mango_200.png"></center></p>
-                     <br><br>a) <a href="#q5aa;balloon">Argentina</a>
-                     <br>b) <a href="#q5ab;flyto">Thailand (and India, China, Indonesia)</a>
-                     <br>c) <a href="#q5ac;balloon">Ruanda</a>
-                     </font>
-                     
-                     <br><br><br><font color="#ffffff"><a href="#4;balloon">previous question</a></font>
-                     <br><br>This is question 5 of 8 of our <a href="#introduction;flyto">flyto-quiz</a>
-                  </div>
-               </body>
-            </html>
-         ]]></description>
-			<styleUrl>#question</styleUrl>
-      </Folder>
-
-      <Folder id="6">
-			<name></name>
-			<visibility>1</visibility>
-			<Snippet maxLines="2"></Snippet>
-			<description>
-         <![CDATA[<!DOCTYPE html>
-            <html>
-               <head>
-                  <meta charset="UTF-8">
-               </head>
-   	         <body>
-                  <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
-                     <h3>Which country is famous for its oranges?</h3>
-                     <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/orange_2_200.png"></center></p>
-                     a) <a href="#q6aa;balloon">Finland</a>
-                     <br>b) <a href="#q6ab;flyto">Brazil (and United States, India)</a>
-                     <br>c) <a href="#q6ac;balloon">Equador</a>
-                     
-                     <br><br><br><font color="#ffffff"><a href="#5;balloon">previous question</a></font>
-                     <br><br>This is question 6 of 8 of our <a href="#introduction;flyto">flyto-quiz</a>
-                  </div>
-               </body>
-            </html>
-         ]]></description>
-			<styleUrl>#question</styleUrl>
-      </Folder>
-
-      <Folder id="7">
-			<name></name>
-			<visibility>1</visibility>
-			<Snippet maxLines="2"></Snippet>
-			<description>
-         <![CDATA[<!DOCTYPE html>
-            <html>
-               <head>
-                  <meta charset="UTF-8">
-               </head>
-   	         <body>
-                  <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
-                     <h3>Which country is famous for its pears?</h3>
-                     <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/pear_plain_200.png"></center></p>
-                     a) <a href="#q7aa;balloon">Thailand</a>
-                     <br>b) <a href="#q7ab;flyto">Argentina (and China, United States, Italy)</a>
-                     <br>c) <a href="#q7ac;balloon">Sri Lanka</a>
-                     </font>
-                     
-                     <br><br><br><font color="#ffffff"><a href="#6;balloon">previous question</a> </font>
-                     <br><br>This is question 7 of 8 of our <a href="#introduction;flyto">flyto-quiz</a>
-                  </div>
-               </body>
-            </html>
-         ]]></description>
-			<styleUrl>#question</styleUrl>
-      </Folder>
-
-      <Folder id="8">
-			<name></name>
-			<visibility>1</visibility>
-			<Snippet maxLines="2"></Snippet>
-			<description>
-         <![CDATA[<!DOCTYPE html>
-            <html>
-               <head>
-                  <meta charset="UTF-8">
-               </head>
-   	         <body>
-                  <div class="panel-questions" style="padding: 20px 20px 20px 20px; ">
-                     <h3>Which country is famous for its pineapples?</h3>
-                     <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/pineapple_4_200.png"></center></p>
-                     <br><br>a) <a href="#q8aa;balloon">Marocco</a>
-                     <br>b) <a href="#q8ab;balloon">Hawaï</a>
-                     <br>c) <a href="#q8ac;flyto">Costa Rica (and Brazil, Phillipines, Thailand)</a>
-                     
-                     <br><br><br><font color="#ffffff"><a href="#7;balloon">previous question</a></font>
-                     <br><br>This is question 8 of 8 of our <a href="#introduction;flyto">flyto-quiz</a>
-                  </div>
-               </body>
-            </html>
-         ]]></description>
-			<styleUrl>#question</styleUrl>
-      </Folder>
-
-
-
-
-
-<!-- Answers -->
-
-		<Folder id="q1aa">
- 			<name></name>
-			<description>
-         <![CDATA[<!DOCTYPE html>
-            <html>
-               <head>
-                  <meta charset="UTF-8">
-               </head>
-	           <body>
-                  <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
-   				     <font color="red"><center>Sorry, you're wrong.</center></font>
-                     <br><br><br><a href="#1;balloon">Try again!</a>
-                  </div>
-               </body>
-            </html>
-			]]></description>
-			<styleUrl>#answer</styleUrl>
-		</Folder>
-
-		<Placemark id="q1ab">
-			<name></name>
-			<Snippet maxLines="2"></Snippet>
-<!--         <IconStyle>
-			   <scale>1.3</scale>
-			   <Icon>
-				  <href>https://dietervanwerkum.github.io/google-earth-flyto-quiz/apple_7_200.png</href>
-			   </Icon>
-		   </IconStyle>-->
-			<description>
-      <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-            <div class="panel-correct-answers" style="padding: 20px 20px 20px 20px; ">
-               <h3 style="color: #00A93C;">Congratulations, that's the correct answer!</h3>
-<!-- image needs to be online on a webserver -->
-               <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/apple_7_200.png"></center></p>
-
-               <p>source: http://www.fao.org/faostat/en/#rankings/countries_by_commodity</p>
-
-				   <p><br>That's a lot of apples! 
-               <br><br><br>You're through to the <a href="#2;balloon">next question</a>!</p>
-            </div>
-            </body>
-         </html>
-			]]></description>
-			<LookAt>
-				<longitude>109.46</longitude>
-				<latitude>35.78</latitude>
-				<altitude>0</altitude>
-            <range>919</range>
-				<tilt>72</tilt>
-				<heading>0</heading>
-			</LookAt>
-			<styleUrl>#answer</styleUrl>
-		<Point>
-			<coordinates>109.46,35.78,0</coordinates>
-		</Point>
-<!--      <ExtendedData>
-         <Data name='fruitImage'>
-            <value>https://dietervanwerkum.github.io/google-earth-flyto-quiz/apple_7_200.png</value>
-         </Data>
-		</ExtendedData> -->
-		</Placemark>
-
-		<Folder id="q1ac">
-			<name></name>
-			<description>
-      <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-               <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
-                  <font color="red"><center>Sorry, you're wrong. </center></font>
-                  <br><br><br><a href="#1;balloon">Try again!</a>
-               </div>
-            </body>
-         </html>
-         ]]></description>
-			<styleUrl>#answer</styleUrl>
-		</Folder>
-
-
-
-
-
-
-		<Folder id="q2aa">
- 			<name></name>
-			<description>
-      <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-               <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
-                  <font color="red"><center>Sorry, you're wrong. </center></font>
-                  <br><br><br><a href="#2;balloon">Try again!</a>
-               </div>
-            </body>
-         </html>
-         ]]></description>
-			<styleUrl>#answer</styleUrl>
-		</Folder>
-
-		<Placemark id="q2ab">
-			<name></name>
-			<Snippet maxLines="2"></Snippet>
-         <IconStyle>
-			   <scale>1.3</scale>
-			   <Icon>
-				  <href>https://dietervanwerkum.github.io/google-earth-flyto-quiz/apple_7_200.png</href>
-			   </Icon>
-		   </IconStyle>
-			<description>
-      <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-            <div class="panel-correct-answers" style="padding: 20px 20px 20px 20px; ">
-               <h3 style="color: #00A93C;">Congratulations, that's the correct answer!</h3>
-<!-- image needs to be online on a webserver -->
-               <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/avocado_fuerte_200.png"></center></p>
-
-               <p>source: http://www.fao.org/faostat/en/#rankings/countries_by_commodity</p>
-
-				   <p><br>Avocados are yummy!
-               <br><br><br>You're through to the <a href="#3;balloon">next question</a>!</p>
-            </div>
-            </body>
-         </html>
-			]]></description>
-			<LookAt>
-				<longitude>-97.17</longitude>
-				<latitude>18.23</latitude>
-				<altitude>0</altitude>
-            <range>1383</range>
-				<tilt>72</tilt>
-				<heading>0</heading>
-			</LookAt>
-			<styleUrl>#answer</styleUrl>
-		<Point>
-			<coordinates>-97.17,18.23,0</coordinates>
-		</Point>
-<!--      <ExtendedData>
-         <Data name='fruitImage'>
-            <value>https://dietervanwerkum.github.io/google-earth-flyto-quiz/avocado_fuerte_200.png</value>
-         </Data>
-		</ExtendedData> -->
-		</Placemark>
-
-		<Folder id="q2ac">
-			<name></name>
-			<description>
-      <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-               <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
-                  <font color="red"><center>Sorry, you're wrong. </center></font>
-                  <br><br><br><a href="#2;balloon">Try again!</a>
-               </div>
-            </body>
-         </html>
-         ]]></description>
-			<styleUrl>#answer</styleUrl>
-		</Folder>
-
-
-
-
-
-
-		<Folder id="q3aa">
- 			<name></name>
-			<description>
-      <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-               <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
-                  <font color="red"><center>Sorry, you're wrong. </center></font>
-                  <br><br><br><a href="#3;balloon">Try again!</a>
-               </div>
-            </body>
-         </html>
-         ]]></description>
-			<styleUrl>#answer</styleUrl>
-		</Folder>
-
-		<Placemark id="q3ab">
-			<name></name>
-			<Snippet maxLines="2"></Snippet>
-			<description>
-      <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-            <div class="panel-correct-answers" style="padding: 20px 20px 20px 20px; ">
-               <h3 style="color: #00A93C;">Congratulations, that's the correct answer!</h3>
-<!-- image needs to be online on a webserver -->
-               <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/banana_peeled_200.png"></center></p>
-
-               <p>source: http://www.fao.org/faostat/en/#rankings/countries_by_commodity</p>
-
-				   <p><br>Why oh why are bananas bent?
-               <br><br><br>You're through to the <a href="#4;balloon">next question</a>!</p>
-            </div>
-            </body>
-         </html>
-			]]></description>
-			<LookAt>
-				<longitude>79.97</longitude>
-				<latitude>12.50</latitude>
-				<altitude>0</altitude>
-            <range>1311</range>
-				<tilt>72</tilt>
-				<heading>0</heading>
-			</LookAt>
-			<styleUrl>#answer</styleUrl>
-		<Point>
-			<coordinates>79.97,12.50,0</coordinates>
-		</Point>
-<!--      <ExtendedData>
-         <Data name='fruitImage'>
-            <value>https://dietervanwerkum.github.io/google-earth-flyto-quiz/banana_peeled_200.png</value>
-         </Data>
-		</ExtendedData>  -->
-		</Placemark>
-
-		<Folder id="q3ac">
-			<name></name>
-			<description>
-      <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-               <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
-                  <font color="red"><center>Sorry, you're wrong. </center></font>
-                  <br><br><br><a href="#3;balloon">Try again!</a>
-               </div>
-            </body>
-         </html>
-         ]]></description>
-			<styleUrl>#answer</styleUrl>
-		</Folder>
-
-
-
-
-
-
-
-
-
-		<Folder id="q4aa">
- 			<name></name>
-			<description>
-      <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-               <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
-                  <font color="red"><center>Sorry, you're wrong. </center></font>
-                  <br><br><br><a href="#4;balloon">Try again!</a>
-               </div>
-            </body>
-         </html>
-         ]]></description>
-			<styleUrl>#answer</styleUrl>
-		</Folder>
-
-		<Placemark id="q4ab">
-			<name></name>
-			<Snippet maxLines="2"></Snippet>
-			<description>
-      <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-               <div class="panel-correct-answers" style="padding: 20px 20px 20px 20px; ">
-                  <h3 style="color: #00A93C;">Congratulations, that's the correct answer!</h3>
-<!-- image needs to be online on a webserver -->
-                  <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/kiwi_photo_200.png"></center></p>
-
-                  <p>source: http://www.fao.org/faostat/en/#rankings/countries_by_commodity</p>
-
-				      <p><br>Fresh and unlike anything else with so much vitamin C!  
-                  <br><br><br>You're through to the <a href="#5;balloon">next question</a>!</p>
-               </div>
-            </body>
-         </html>
-			]]></description>
-			<LookAt>
-				<longitude>12.75</longitude>
-				<latitude>41.59</latitude>
-				<altitude>0</altitude>
-            <range>2138</range>
-				<tilt>72</tilt>
-				<heading>0</heading>
-			</LookAt>
-			<styleUrl>#answer</styleUrl>
-		<Point>
-			<coordinates>12.75,41.59,0</coordinates>
-		</Point>
-<!--      <ExtendedData>
-         <Data name='fruitImage'>
-            <value>https://dietervanwerkum.github.io/google-earth-flyto-quiz/kiwi_photo_200.png</value>
-         </Data>
-		</ExtendedData>  -->
-		</Placemark>
-
-		<Folder id="q4ac">
-			<name></name>
-			<description>
-      <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-               <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
-                  <font color="red"><center>Sorry, you're wrong. </center></font>
-                  <br><br><br><a href="#4;balloon">Try again!</a>
-               </div>
-            </body>
-         </html>
-         ]]></description>
-			<styleUrl>#answer</styleUrl>
-		</Folder>
-
-
-
-
-
-
-
-
-		<Folder id="q5aa">
- 			<name></name>
-			<description>
-      <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-               <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
-                  <font color="red"><center>Sorry, you're wrong. </center></font>
-                  <br><br><br><a href="#5;balloon">Try again!</a>
-               </div>
-            </body>
-         </html>
-         ]]></description>
-			<styleUrl>#answer</styleUrl>
-		</Folder>
-
-		<Placemark id="q5ab">
-			<name></name>
-			<Snippet maxLines="2"></Snippet>
-			<description>
-         <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-               <div class="panel-correct-answers" style="padding: 20px 20px 20px 20px; ">
-                  <h3 style="color: #00A93C;">Congratulations, that's the correct answer!</h3>
-<!-- image needs to be online on a webserver -->
-                  <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/mango_200.png"></center></p>
-   
-                  <p>source: http://www.fao.org/faostat/en/#rankings/countries_by_commodity</p>
-   
-				      <p><br>Hmmm, mangos. Truly delicious fruit! 
-                  <br><br><br>You're through to the <a href="#6;balloon">next question</a>!</p>
-               </div>
-            </body>
-         </html>
-			]]></description>
-			<LookAt>
-				<longitude>98.98</longitude>
-				<latitude>18.65</latitude>
-				<altitude>0</altitude>
-            <range>1147</range>
-				<tilt>72</tilt>
-				<heading>0</heading>
-			</LookAt>
-			<styleUrl>#answer</styleUrl>
-		<Point>
-			<coordinates>98.98,18.65,0</coordinates>
-		</Point>
-<!--      <ExtendedData>
-         <Data name='fruitImage'>
-            <value>https://dietervanwerkum.github.io/google-earth-flyto-quiz/mango_200.png</value>
-         </Data>
-		</ExtendedData> -->
-		</Placemark>
-
-		<Folder id="q5ac">
-			<name></name>
-			<description>
-         <![CDATA[<!DOCTYPE html>
-            <html>
-               <head>
-                  <meta charset="UTF-8">
-               </head>
-   	         <body>
-                  <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
-                     <font color="red"><center>Sorry, you're wrong. </center></font>
-                     <br><br><br><a href="#5;balloon">Try again!</a>
-                  </div>
-               </body>
-            </html>
-         ]]></description>
-			<styleUrl>#answer</styleUrl>
-		</Folder>
-
-
-
-
-
-
-
-
-
-		<Folder id="q6aa">
- 			<name></name>
-			<description>
-         <![CDATA[<!DOCTYPE html>
-            <html>
-               <head>
-                  <meta charset="UTF-8">
-               </head>
-   	         <body>
-                  <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
-                     <font color="red"><center>Sorry, you're wrong. </center></font>
-                     <br><br><br><a href="#6;balloon">Try again!</a>
-                  </div>
-               </body>
-            </html>
-         ]]></description>
-			<styleUrl>#answer</styleUrl>
-		</Folder>
-
-		<Placemark id="q6ab">
-			<name></name>
-			<Snippet maxLines="2"></Snippet>
-			<description>
-      	<![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-               <div class="panel-correct-answers" style="padding: 20px 20px 20px 20px; ">
-                  <h3 style="color: #00A93C;">Congratulations, that's the correct answer!</h3>
-<!-- image needs to be online on a webserver -->
-                  <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/orange_2_200.png"></center></p>
-   
-                  <p>source: http://www.fao.org/faostat/en/#rankings/countries_by_commodity</p>
-   
-				      <p><br>Named after it's own colour? Or the other way around? You tell me;-) 
-                  <br><br><br>You're through to the <a href="#7;balloon">next question</a>!</p>
-               </div>
-            </body>
-         </html>
-			]]></description>
-			<LookAt>
-				<longitude>-46.87</longitude>
-				<latitude>-22.65</latitude>
-				<altitude>0</altitude>
-            <range>7624</range>
-				<tilt>72</tilt>
-				<heading>0</heading>
-			</LookAt>
-			<styleUrl>#answer</styleUrl>
-		<Point>
-			<coordinates>-46.87,-22.65,0</coordinates>
-		</Point>
-<!--      <ExtendedData>
-         <Data name='fruitImage'>
-            <value>https://dietervanwerkum.github.io/google-earth-flyto-quiz/orange_2_200.png</value>
-         </Data>
-		</ExtendedData> -->
-		</Placemark>
-
-		<Folder id="q6ac">
-			<name></name>
-			<description>
-         <![CDATA[<!DOCTYPE html>
-            <html>
-               <head>
-                  <meta charset="UTF-8">
-               </head>
-   	         <body>
-                  <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
-                     <font color="red"><center>Sorry, you're wrong. </center></font>
-                     <br><br><br><a href="#6;balloon">Try again!</a>
-                  </div>
-               </body>
-            </html>
-         ]]></description>
-			<styleUrl>#answer</styleUrl>
-		</Folder>
-
-
-
-
-
-
-
-
-
-		<Folder id="q7aa">
- 			<name></name>
-			<description>
-         <![CDATA[<!DOCTYPE html>
-            <html>
-               <head>
-                  <meta charset="UTF-8">
-               </head>
-   	         <body>
-                  <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
-                     <font color="red"><center>Sorry, you're wrong. </center></font>
-                     <br><br><br><a href="#7;balloon">Try again!</a>
-                  </div>
-               </body>
-            </html>
-         ]]></description>
-			<styleUrl>#answer</styleUrl>
-		</Folder>
-
-		<Placemark id="q7ab">
-			<name></name>
-			<Snippet maxLines="2"></Snippet>
-			<description>
-      <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-               <div class="panel-correct-answers" style="padding: 20px 20px 20px 20px; ">
-                  <h3 style="color: #00A93C;">Congratulations, that's the correct answer!</h3>
-<!-- image needs to be online on a webserver -->
-                  <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/pear_plain_200.png"></center></p>
-   
-                  <p>source: http://www.fao.org/faostat/en/#rankings/countries_by_commodity</p>
-   
-				      <p><br>A pear a day . . . keeps the doctor away. Just like all other fruits. 
-                  <br><br><br>You're through to the <a href="#8;balloon">next question</a>!</p>
-               </div>
-            </body>
-         </html>
-			]]></description>
-			<LookAt>
-				<longitude>-72.72</longitude>
-				<latitude>-40.85</latitude>
-				<altitude>0</altitude>
-            <range>5604</range>
-				<tilt>72</tilt>
-				<heading>0</heading>
-			</LookAt>
-			<styleUrl>#answer</styleUrl>
-		<Point>
-			<coordinates>-72.72,-40.85,0</coordinates>
-		</Point>
- <!--     <ExtendedData>
-         <Data name='fruitImage'>
-            <value>https://dietervanwerkum.github.io/google-earth-flyto-quiz/pear_plain_200.png</value>
-         </Data>
-		</ExtendedData> -->
-		</Placemark>
-
-		<Folder id="q7ac">
-			<name></name>
-			<description>
-         <![CDATA[<!DOCTYPE html>
-            <html>
-               <head>
-                  <meta charset="UTF-8">
-               </head>
-   	         <body>
-                  <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
-                     <font color="red"><center>Sorry, you're wrong. </center></font>
-                     <br><br><br><a href="#7;balloon">Try again!</a>
-                  </div>
-               </body>
-            </html>
-         ]]></description>
-			<styleUrl>#answer</styleUrl>
-		</Folder>
-
-
-
-
-
-
-<!-- last question-->
-		<Folder id="q8aa">
-			<name></name>
-			<description>
-      <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-               <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
-				     <font color="red"><center>Sorry, you're wrong. </center></font>
-                  <p><a href="#8;balloon">Try again!</a></p>
-               </div>
-            </body>
-         </html>
-			]]></description>
-			<styleUrl>#answer</styleUrl>
-		</Folder>
-
-		<Folder id="q8ab">
-			<name></name>
-			<description>
-         <![CDATA[<!DOCTYPE html>
-            <html>
-               <head>
-                  <meta charset="UTF-8">
-               </head>
-   	         <body>
-                  <div class="panelcontent-wrong-answer" style="padding: 20px 20px 20px 20px; ">
-                     <font color="red"><center>Sorry, you're wrong. </center></font>
-                     <br><br><br><a href="#8;balloon">Try again!</a>
-                  </div>
-               </body>
-            </html>
-         ]]></description>
-			<styleUrl>#answer</styleUrl>
-		</Folder>
-
-		<Placemark id="q8ac">
-			<name></name>
-			<Snippet maxLines="2"></Snippet>
-         <IconStyle>
-			   <scale>1.3</scale>
-			   <Icon>
-				  <href>https://dietervanwerkum.github.io/google-earth-flyto-quiz/apple_7_200.png</href>
-			   </Icon>
-		   </IconStyle>
-			<description>
-      <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-               <div class="panel-correct-answers" style="padding: 20px 20px 20px 20px; ">
-                  <h3 style="color: #00A93C;">Congratulations, that's the correct answer!</h3>
-   <!-- image needs to be online on a webserver -->
-                  <p><center><img src="https://dietervanwerkum.github.io/google-earth-flyto-quiz/pineapple_4_200.png"></center></p>
-   
-                  <p>source: http://www.fao.org/faostat/en/#rankings/countries_by_commodity</p>
-                  <p>Did you know a pineapple is ripe when you can pull the center leaf easily. Hard to wait though &nbsp;. &nbsp;. &nbsp;.</p> 
-  
-   <!-- Because this is the last question, we link to "last" here!-->
-   				   <br><font color="#ffffff"><a href="#7;balloon">previous question</a> | <a href="#last;balloon">Conclusion &nbsp;. &nbsp;. &nbsp;.</a></font>
-               </div>
-            </body>
-         </html>
-			]]></description>
-			<LookAt>
-				<longitude>-83.25</longitude>
-				<latitude>10.07</latitude>
-				<altitude>0</altitude>
-            <range>2285</range>
-				<tilt>72</tilt>
-				<heading>0</heading>
-			</LookAt>
-			<styleUrl>#answer</styleUrl>
-			<Point>
-				<coordinates>-83.25,10.07,0</coordinates>
-			</Point>
- <!--     <ExtendedData>
-         <Data name='fruitImage'>
-            <value>https://dietervanwerkum.github.io/google-earth-flyto-quiz/pineapple_4_200.png</value>
-         </Data>
-		</ExtendedData> -->
-		</Placemark>
-
-
-
-
-
-
-
-
-
-
-
-
-		<Folder id="last">
-			<name>This is the end of our quiz</name>
-			<Snippet maxLines="2"></Snippet>
-			<description>
-      <![CDATA[<!DOCTYPE html>
-         <html>
-            <head>
-               <meta charset="UTF-8">
-            </head>
-	         <body>
-                  <p><br>Wow! You know a lot about fruit ;-)</p>
-
-                  <p><br><br><a href="#1;balloon">Have another go if you like!</a></p>
-
-                  <h3>Credits</h3>
-                  <ul>
-                     <li>This quiz is based on an open source <a href="https://github.com/DieterVanWerkum/google-earth-flyto-quiz">template</a>.
-                     <li>Thankyou Paul Sherman for the tasty images (https://wpclipart.com)!
-                  </ul>
-            </body>
-         </html>
-			]]></description>
-			<LookAt>
-				<longitude>52.5</longitude>
-				<latitude>5.5</latitude>
-				<altitude>0</altitude>
-				<range>1000000</range>
-				<tilt>85</tilt>
-				<heading>0</heading>
-			</LookAt>
-			<styleUrl>#last</styleUrl>
-		</Folder>
-
-	</Folder>
-
-</Document>
-</kml>
-
+       <!-- Because this is the last question, we link to "last" here!-->
+       				   <br><font color="#ffffff"><a href="#7;balloon">previous question</a> | <a href="#last;balloon">Conclusion &nbsp;. &nbsp;. &nbsp;.</a></font>
+                   </div>
+                </body>
+             </html>
+    			]]></description>
+    			<LookAt>
+    				<longitude>-83.25</longitude>
+    				<latitude>10.07</latitude>
+    				<altitude>0</altitude>
+                <range>2285</range>
+    				<tilt>72</tilt>
+    				<heading>0</heading>
+    			</LookAt>
+    			<styleUrl>#answer</styleUrl>
+    			<Point>
+    				<coordinates>-83.25,10.07,0</coordinates>
+    			</Point>
+     <!--     <ExtendedData>
+             <Data name='fruitImage'>
+                <value>https://dietervanwerkum.github.io/google-earth-flyto-quiz/pineapple_4_200.png</value>
+             </Data>
+    		</ExtendedData> -->
+    		</Placemark>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    		<Folder id="last">
+    			<name>This is the end of our quiz</name>
+    			<Snippet maxLines="2"></Snippet>
+    			<description>
+          <![CDATA[<!DOCTYPE html>
+             <html>
+                <head>
+                   <meta charset="UTF-8">
+                </head>
+    	         <body>
+                      <p><br>Wow! You know a lot about fruit ;-)</p>
+    
+                      <p><br><br><a href="#1;balloon">Have another go if you like!</a></p>
+    
+                      <h3>Credits</h3>
+                      <ul>
+                         <li>This quiz is based on an open source <a href="https://github.com/DieterVanWerkum/google-earth-flyto-quiz">template</a>.
+                         <li>Thankyou Paul Sherman for the tasty images (https://wpclipart.com)!
+                      </ul>
+                </body>
+             </html>
+    			]]></description>
+    			<LookAt>
+    				<longitude>52.5</longitude>
+    				<latitude>5.5</latitude>
+    				<altitude>0</altitude>
+    				<range>1000000</range>
+    				<tilt>85</tilt>
+    				<heading>0</heading>
+    			</LookAt>
+    			<styleUrl>#last</styleUrl>
+    		</Folder>
+    
+    	</Folder>
+    
+    </Document>
+    </kml>
