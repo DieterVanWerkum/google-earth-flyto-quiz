@@ -119,7 +119,7 @@
     		<IconStyle>
     			<scale>3.0</scale>
     			<Icon>
-    				<href>http://YOURDOMAIN/YOUR/PATH/YOURIMAGE</href>
+    				<href>https://www.github.com/dietervanwerkum/google-earth-flyto-quiz/flyto-quiz-template-icon-orange.png</href>
     			</Icon>
     		</IconStyle>
     		<LabelStyle>
@@ -178,7 +178,7 @@
     			<Icon>
     <!-- june 2017: custom icon via extended data doesn't work	<href>$fruitImage</href> 
     also commented out in (correct) answers -->
-    			   <href>http://YOURDOMAIN/YOUR/PATH/YOURIMAGE</href>
+    			   <href>https://www.github.com/dietervanwerkum/google-earth-flyto-quiz/flyto-quiz-template-icon-orange.png</href>
     			</Icon>
     		</IconStyle>
     		<LabelStyle>
